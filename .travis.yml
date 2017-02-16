@@ -1,0 +1,13 @@
+language: java
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk6
+  
+script:
+  - jdk_switcher use oraclejdk8
+  - javac SSNP.java
+  - jdk_switcher use oraclejdk7
+  - javac SSNP.java
+  - jdk_switcher use openjdk6
+  - javac SSNP.java
